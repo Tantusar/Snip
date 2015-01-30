@@ -90,10 +90,11 @@ namespace Winter
 
                                 if (windowTitle.Length > 1)
                                 {
-                                    string artist = windowTitle[0].Trim();
-                                    string songTitle = windowTitle[1].Trim();
+                                    string songTitle = windowTitle[0].Trim();
+                                    string artist = windowTitle[1].Trim();
+                                    string albumTitle = windowTitle[2].Trim();
 
-                                    TextHandler.UpdateText(songTitle, artist);
+                                    TextHandler.UpdateText(songTitle, artist, albumTitle);
                                 }
                                 else
                                 {
